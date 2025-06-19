@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/rounded_corner_card_background">
+
+    <TextView
+        android:id="@+id/tvWorkerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivEditWorker"
+        android:layout_marginEnd="8dp"
+        tools:text="Juan Pérez" />
+
+    <TextView
+        android:id="@+id/tvWorkerDni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvWorkerName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivEditWorker"
+        android:layout_marginEnd="8dp"
+        tools:text="DNI: 12345678" />
+
+    <TextView
+        android:id="@+id/tvWorkerType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvWorkerDni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivEditWorker"
+        android:layout_marginEnd="8dp"
+        tools:text="Tipo: Empleado" />
+
+    <TextView
+        android:id="@+id/tvWorkerAreaPuesto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvWorkerType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivEditWorker"
+        android:layout_marginEnd="8dp"
+        tools:text="Área: Producción - Puesto: Jefe" />
+
+    <ImageView
+        android:id="@+id/ivEditWorker"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="Editar trabajador"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

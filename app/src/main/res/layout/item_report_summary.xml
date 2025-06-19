@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp" app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox_select_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:buttonTint="?attr/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_report_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="sábado, 20 de julio de 2024"
+                android:textSize="16sp" android:textStyle="bold"
+                android:textColor="@color/primary_text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Almuerzos: "
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/text_view_total_lunches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="25"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Cenas: "
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/text_view_total_dinners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="18"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_view_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Detalles"
+            android:textSize="14sp"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginStart="8dp"
+            android:drawableEnd="@drawable/ic_arrow_right" android:drawablePadding="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

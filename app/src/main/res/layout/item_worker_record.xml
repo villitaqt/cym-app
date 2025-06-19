@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@android:color/transparent"
+    android:clickable="false"
+    android:focusable="false"
+    android:foreground="?attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/text_view_worker_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Ana Lucía Pérez (4)"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text_color"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_view_tipo_menu_button"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_worker_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="19:56 PM"
+            android:textSize="15sp"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintTop_toTopOf="@+id/text_view_tipo_menu_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_tipo_menu_button" />
+
+        <TextView
+            android:id="@+id/text_view_tipo_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Común"
+            android:textSize="14sp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/rounded_border_accent_button"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_view_worker_time"
+            android:layout_marginEnd="8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

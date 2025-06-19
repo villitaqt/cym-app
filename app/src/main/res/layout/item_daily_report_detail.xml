@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/rounded_corner_card_background">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCol2Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCol3Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCol4Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <TextView
+        android:id="@+id/textViewNameDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCantidadLabel"
+        android:layout_marginEnd="8dp"
+        tools:text="Ana Lucía Pérez" />
+
+    <TextView
+        android:id="@+id/textViewCantidadLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cantidad"
+        app:layout_constraintTop_toTopOf="@+id/textViewNameDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCantidadDisplay"
+        android:layout_marginEnd="4dp" />
+
+    <TextView
+        android:id="@+id/textViewCantidadDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="(1)"
+        app:layout_constraintTop_toTopOf="@+id/textViewNameDisplay"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/labelDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DNI:"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewDni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="12345678"
+        app:layout_constraintTop_toTopOf="@+id/labelDni"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol2Start"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol3Start"
+        android:layout_marginStart="4dp" />
+
+    <TextView
+        android:id="@+id/labelTipoTrabajador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo:"
+        app:layout_constraintTop_toTopOf="@+id/labelDni"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol3Start" />
+
+    <TextView
+        android:id="@+id/textViewTipoTrabajador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="EMPLEADO"
+        app:layout_constraintTop_toTopOf="@+id/labelTipoTrabajador"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol4Start"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="4dp" />
+
+    <TextView
+        android:id="@+id/labelArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Área:"
+        app:layout_constraintTop_toBottomOf="@+id/labelDni"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/textViewArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Marketing"
+        app:layout_constraintTop_toTopOf="@+id/labelArea"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol2Start"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol3Start"
+        android:layout_marginStart="4dp" />
+
+    <TextView
+        android:id="@+id/labelPuestoLabor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puesto:"
+        app:layout_constraintTop_toTopOf="@+id/labelArea"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol3Start" />
+
+    <TextView
+        android:id="@+id/textViewPuestoLabor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="JEFE DE PRODUCCION"
+        app:layout_constraintTop_toTopOf="@+id/labelPuestoLabor"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol4Start"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="4dp" />
+
+    <TextView
+        android:id="@+id/labelTipoMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú:"
+        app:layout_constraintTop_toBottomOf="@+id/labelArea"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/textViewTipoMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Común"
+        app:layout_constraintTop_toTopOf="@+id/labelTipoMenu"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol2Start"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCol3Start"
+        android:layout_marginStart="4dp" />
+
+    <TextView
+        android:id="@+id/labelTurno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turno:"
+        app:layout_constraintTop_toTopOf="@+id/labelTipoMenu"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol3Start" />
+
+    <TextView
+        android:id="@+id/textViewTurno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Almuerzo"
+        app:layout_constraintTop_toTopOf="@+id/labelTurno"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCol4Start"
+        app:layout_constraintEnd_toStartOf="@+id/textViewHora"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textViewHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="19:56 PM"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/labelTurno"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

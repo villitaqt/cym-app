@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quick_date_ranges">
+        <item>Últimos 7 días</item>
+        <item>Últimos 30 días</item>
+        <item>Este Mes</item>
+        <item>Mes Anterior</item>
+        <item>Todo el Tiempo</item>
+    </string-array>
+</resources>
